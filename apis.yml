@@ -27,16 +27,26 @@ tags:
 - Data Aggregation
 - Interac
 created: '2026-07-23'
-modified: '2026-07-23'
+modified: '2026-07-24'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/tangerine-domain-security.yml
 - type: Website
   url: https://www.tangerine.ca
 - type: TermsOfService
   url: https://www.tangerine.ca/en/legal
 - type: PrivacyPolicy
   url: https://www.tangerine.ca/en/privacy
+- type: Support
+  url: https://www.tangerine.ca/en/help-centre
+- type: Blog
+  url: https://www.tangerine.ca/en/thejuice
+- type: SignUp
+  url: https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=en_CA
+- type: Login
+  url: https://www.tangerine.ca/app/#/login/login-id?locale=en_CA
 - type: LinkedIn
   url: https://ca.linkedin.com/company/tangerine-bank
 maintainers:
