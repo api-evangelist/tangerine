@@ -1,0 +1,90 @@
+aid: tangerine
+name: Tangerine
+review:
+  question: Does Tangerine expose a first-party public developer portal or downloadable API specifications?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Tangerine (Tangerine Bank), the Canadian branchless Schedule I bank owned
+    by Scotiabank, publishes no first-party public developer portal and no
+    downloadable OpenAPI/Swagger specifications. URL probes confirm the
+    absence of a public developer surface: developer.tangerine.ca does not
+    resolve (no host / connection failure) and api.tangerine.ca returns HTTP
+    403 (a gated host, not a documented public API). The tangerine.ca site
+    exposes only consumer web/mobile banking, legal, and privacy pages — no
+    developer, docs, or API-reference section. As a distinct legal entity,
+    Tangerine's posture is assessed separately from its Scotiabank parent,
+    which operates a commercial developer portal at developer.scotiabank.com
+    (HTTP 200); that parent portal is not attributed to Tangerine.
+  openBankingPosture: |
+    Canada has no operational open-banking / consumer-driven-banking mandate.
+    The federal Consumer-Driven Banking framework (Budget 2024 and Fall
+    Economic Statement 2024, overseen by the Financial Consumer Agency of
+    Canada / FCAC) is legislated but not yet live, so data access is voluntary
+    and fragmented. Tangerine publishes no stated CDB/open-banking framework
+    position or FDX-alignment statement. There is no documented FDX
+    participation and no US-style 1033 posture (Canada, not US).
+  dataAccess: |
+    Third-party access to Tangerine client account and transaction data today
+    is aggregator/screen-scraping based rather than a first-party API. Tangerine
+    is a documented institution on Plaid and on Finicity (Mastercard); community
+    scrapers also exist. This aggregator-only access is the honest reality and
+    is not a Tangerine-published API. Tangerine supports Interac e-Transfer as a
+    consumer payment feature but exposes no Interac/Real-Time-Rail API. In
+    November 2025 Tangerine announced a next-generation banking-platform
+    migration with Engine by Starling; no developer API resulted from this as of
+    the review date.
+  authModel: |
+    Not applicable — no first-party public API is documented, so no OAuth2/OIDC,
+    API-key, or mTLS developer authentication model is published by Tangerine.
+    Aggregator connections rely on client online-banking credentials brokered by
+    the aggregator, not a Tangerine-issued API credential.
+  specProvenance: none
+  transports:
+  - protocol: REST
+    documented: false
+    note: No first-party public REST API is documented.
+  - protocol: GraphQL
+    documented: false
+  - protocol: WebSocket
+    documented: false
+  probes:
+  - url: https://developer.tangerine.ca
+    status: 000
+    note: No host / connection failure — no first-party developer portal exists.
+  - url: https://api.tangerine.ca
+    status: 403
+    note: Host responds but is gated; not a documented public API surface.
+  - url: https://www.tangerine.ca/en/developers
+    status: 404
+    note: No developer section on the consumer site.
+  - url: https://www.tangerine.ca
+    status: 200
+    note: Consumer banking website (verified).
+  - url: https://developer.scotiabank.com
+    status: 200
+    note: Scotiabank PARENT commercial developer portal — separate entity, NOT attributed to Tangerine.
+sources:
+- url: https://www.tangerine.ca
+  type: Website
+  note: Consumer digital-banking site; no developer or API section.
+- url: https://en.wikipedia.org/wiki/Tangerine_Bank
+  type: Reference
+  note: Charter (Schedule I bank, institution 614), ING Direct Canada history, Scotiabank ownership, ~2M clients, branchless.
+- url: https://plaid.com/institutions/tangerine-personal/
+  type: Aggregator
+  note: Tangerine documented as a connectable institution on Plaid (aggregator access).
+- url: https://www.tangerine.ca/en/about-us/press-releases/pr-2025-11-04
+  type: PressRelease
+  note: Nov 2025 Tangerine + Engine by Starling next-generation banking-platform agreement.
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    No first-party public API or downloadable specification exists to harvest.
+    The repository is recorded as an identity-only (stub) profile with an honest
+    aggregator-only data-access posture. It should be revisited if Tangerine
+    launches a first-party developer portal or if Canada's Consumer-Driven
+    Banking framework goes live and Tangerine exposes a compliant data API.

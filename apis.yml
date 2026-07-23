@@ -1,0 +1,44 @@
+aid: tangerine
+url: https://raw.githubusercontent.com/api-evangelist/tangerine/refs/heads/main/apis.yml
+name: Tangerine
+kind: company
+description: >-
+  Tangerine is a Canadian direct (branchless) bank headquartered in Toronto,
+  Ontario, and a federally regulated Schedule I bank chartered as Tangerine Bank
+  (institution number 614). Founded in 1997 as ING Direct Canada, it was
+  acquired by Scotiabank in 2012 and rebranded as Tangerine in 2014; it remains a
+  separate legal entity operating as Scotiabank's digital-banking arm, serving
+  roughly two million clients with no-fee chequing and savings accounts, GICs,
+  mortgages, mutual funds, and a cash-back Mastercard delivered entirely through
+  mobile and web. On API and open-finance posture, Tangerine publishes no
+  first-party public developer portal or downloadable API specifications; Canada
+  has no operational consumer-driven-banking mandate yet (the federal framework
+  is legislated but not live), so third-party access to Tangerine account and
+  transaction data today is aggregator-based via Plaid and Finicity (Mastercard)
+  rather than through a documented first-party API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Digital Bank
+- Neobank
+- Schedule I Bank
+- Data Aggregation
+- Interac
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.tangerine.ca
+- type: TermsOfService
+  url: https://www.tangerine.ca/en/legal
+- type: PrivacyPolicy
+  url: https://www.tangerine.ca/en/privacy
+- type: LinkedIn
+  url: https://ca.linkedin.com/company/tangerine-bank
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
