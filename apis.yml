@@ -18,6 +18,15 @@ description: >-
   rather than through a documented first-party API.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- Canada
+- Digital Bank
+- Neobank
+- Schedule I Bank
+- Data Aggregation
+- Interac
+tags_raw:
 - Financial Services
 - Banking
 - Canada
