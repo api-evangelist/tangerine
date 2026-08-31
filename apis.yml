@@ -51,6 +51,11 @@ modified: '2026-07-24'
 specificationVersion: '0.23'
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/scotiabank/
+  name: Scotiabank
+  x-relationship: acquired
+  x-evidence: "Founded in 1997 as ING Direct Canada, it was acquired by Scotiabank in 2012 and rebranded as Tangerine in 2014; it remains a separate legal entity operating as Scotiabank's digital-banking arm, serving roughly two million clients with no-fe"
 - type: DomainSecurity
   url: security/tangerine-domain-security.yml
 - type: Website
