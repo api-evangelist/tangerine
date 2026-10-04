@@ -41,13 +41,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
-- Financial-Services
+- Financial Services
 - Banking
 - Canada
 - Digital Bank
 - Neobank
 - Schedule I Bank
-- Data Aggregation
 - Interac
 tags_raw:
 - Financial Services
@@ -56,8 +55,8 @@ tags_raw:
 - Digital Bank
 - Neobank
 - Schedule I Bank
-- Data Aggregation
 - Interac
+- Financial-Services
 created: '2026-07-23'
 modified: '2026-07-24'
 specificationVersion: '0.23'
@@ -89,3 +88,5 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-tags-removed:
+- Data Aggregation
