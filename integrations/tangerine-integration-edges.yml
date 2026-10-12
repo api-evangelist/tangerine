@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/tangerine/integrations
+- https://n8n.io/integrations/tangerine/
+- https://composio.dev/toolkits/tangerine
+- https://monid.ai/tools/tangerine
+checked:
+- https://composio.dev/toolkits/tangerine
+- https://monid.ai/tools/tangerine
+- https://n8n.io/integrations/tangerine/
+- https://zapier.com/apps/tangerine/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
