@@ -18,6 +18,11 @@ checked:
 - https://www.canada.ca/en/financial-consumer-agency.html
 - https://www.consumerfinance.gov/compliance/supervision-examinations/institutions/
 - https://www.nmlsconsumeraccess.org/
+- https://www.bankofcanada.ca/core-functions/retail-payments-supervision/psp-registry/
+- https://www.bankofcanada.ca/rps-api/cif2/accounts/list
+- https://www.payments.ca/payment-resources/directories?field_directory_type=10
+- https://www.payments.ca/payment-resources/directories?field_directory_type=13
+- https://www.payments.ca/payment-resources/directories?field_directory_type=14
 summary: null
 marketplace_apps: []
 edges:
@@ -74,4 +79,36 @@ edges:
     identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   detected_by: sweep-consumer-lending-licensing.py
   first_seen: '2026-10-21'
+- partner_name: Payments Canada members and payment system participants
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.payments.ca/payment-resources/directories
+  category: Payments Canada membership / ACSS / Lynx participation
+  contract_reference:
+    register: Payments Canada members and payment system participants
+    spec_file: null
+    standard: null
+    role: payment-system-member
+    registrations:
+    - registered_name: Tangerine Bank
+      register_status: member
+      register_country: CA
+      register_id: '614'
+      matched_domain: tangerine.ca
+      matched_by: domain
+      licences:
+      - Payments Canada member
+      member_class: Banks
+      identity: wikidata Q15238797 'Tangerine' P856 https://www.tangerine.ca/en/personal
+    signal_note: 'participation only: a regulator registration / payment-system membership; no API conformance is
+      published by this register'
+    detected_by: sweep-canada-rpaa-psp-registry.py
+    detected: '2026-10-22'
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-canada-rpaa-psp-registry.py
+  first_seen: '2026-10-22'
 templates: []
